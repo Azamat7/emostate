@@ -18,7 +18,12 @@
 
     <div class="container">
       <!-- child template -->
-      {% block content %}{% endblock %}
+      {% block content %}{% endblock %} 
+      <ul>
+        <li><a href="{{ url_for('main.outdoor_activity') }}">OutdoorActivity</a></li>
+        <li><a href="{{ url_for('main.app_usage') }}">App Usage</a></li>
+        <li><a href="{{ url_for('main.recommendation') }}">Diagnosis & Recommendation</a></li>
+      </ul>
     </div>
 
 
