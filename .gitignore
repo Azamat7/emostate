@@ -1,0 +1,6 @@
+env/
+.DS_Store
+__pycache__/
+project/__pycache__
+project/server/__pycache__
+project/server/main/__pycache__
