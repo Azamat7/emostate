@@ -4,3 +4,5 @@ __pycache__/
 project/__pycache__
 project/server/__pycache__
 project/server/main/__pycache__
+graph.html
+plot.py
