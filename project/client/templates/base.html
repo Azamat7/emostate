@@ -19,14 +19,29 @@
     <div class="container">
       <!-- child template -->
       {% block content %}{% endblock %} 
-      <ul>
-        <li><a href="{{ url_for('main.outdoor_activity') }}">OutdoorActivity</a></li>
-        <li><a href="{{ url_for('main.app_usage') }}">App Usage</a></li>
-        <li><a href="{{ url_for('main.recommendation') }}">Diagnosis & Recommendation</a></li>
-      </ul>
+
+      <div class="footer">
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-2 text-right"><h5>See My Mental Change By:</h5></div>
+          <div class="col-2 padding-0">
+            <a class="btn btn-success btn-lg btn-block" href="{{ url_for('main.outdoor_activity') }}" role="button">OutdoorActivity</a>
+          </div>
+          <div class="col-2 padding-0">
+            <a class="btn btn-success btn-lg btn-block" href="{{ url_for('main.app_usage') }}" role="button">App Usage</a>
+          </div>
+          <div class="col-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-2 text-right"><h5>Go For Personal Diagnosis:</h5></div>
+          <div class="col-4 padding-0">
+              <a class="btn btn-success btn-lg btn-block" href="{{ url_for('main.recommendation') }}" role="button">Diagnosis & Recommendation</a>
+          </div>
+          <div class="col-2"></div>
+        </div>
+      </div>
     </div>
-
-
 
     <!-- scripts -->
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
