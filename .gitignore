@@ -6,3 +6,5 @@ project/server/__pycache__
 project/server/main/__pycache__
 graph.html
 plot.py
+app_event.csv
+esm_data.csv
