@@ -16,7 +16,6 @@ def outdoor_activity():
 
 @main_blueprint.route('/app_usage', methods=['GET', 'POST'])
 def app_usage():
-  print(request.args.get('day'))
   return render_template('app_usage.html', day = (request.args.get('day') or "8"))
 
 @main_blueprint.route('/recommendation', methods=['GET'])

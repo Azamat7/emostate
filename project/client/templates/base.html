@@ -16,31 +16,24 @@
 
   <body>
 
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #28a745; color:white;">
+      <a class="navbar-brand" >Welcome to EmoState</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="{{ url_for('main.outdoor_activity') }}">Outdoor Activity <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="{{ url_for('main.app_usage') }}">App Usage</a>
+          <a class="nav-item nav-link" href="{{ url_for('main.recommendation') }}">Diagnosis & Recommendation</a>
+          <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
       <!-- child template -->
       {% block content %}{% endblock %} 
-
-      <div class="footer">
-        <div class="row">
-          <div class="col-4"></div>
-          <div class="col-2 text-right"><h5>See My Mental Change By:</h5></div>
-          <div class="col-2 padding-0">
-            <a class="btn btn-success btn-lg btn-block" href="{{ url_for('main.outdoor_activity') }}" role="button">OutdoorActivity</a>
-          </div>
-          <div class="col-2 padding-0">
-            <a class="btn btn-success btn-lg btn-block" href="{{ url_for('main.app_usage') }}" role="button">App Usage</a>
-          </div>
-          <div class="col-2"></div>
-        </div>
-        <div class="row">
-          <div class="col-4"></div>
-          <div class="col-2 text-right"><h5>Go For Personal Diagnosis:</h5></div>
-          <div class="col-4 padding-0">
-              <a class="btn btn-success btn-lg btn-block" href="{{ url_for('main.recommendation') }}" role="button">Diagnosis & Recommendation</a>
-          </div>
-          <div class="col-2"></div>
-        </div>
-      </div>
 
     </div>
 
@@ -51,6 +44,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
     {% block js %}{% endblock %}
 
   </body>
