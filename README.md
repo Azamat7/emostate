@@ -2,7 +2,7 @@
 
 ## Description  
 
-A folder ```project/client/templates/``` has all the html files that are rendered. There are three main pages: ```outdoor_activity.html```, ```app_usage.html```, ```recommendation.html```. All inherits ```base.html```, in which most of design attributes are set. Each page mainly consists of plotly python code converted to be embedded into html & js file.  
+A folder ```project/client/templates/``` has all the html files that are rendered. There are three main pages: ```outdoor_activity.html```, ```app_usage.html```, ```recommendation.html```. All inherit ```base.html```, in which most of the design attributes are set. Each page mainly consists of plotly python code converted to be embedded into html & js file.
 
 
 
