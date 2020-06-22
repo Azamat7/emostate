@@ -4,7 +4,13 @@
 
 <div class="col-8 mx-auto">
     <div>
-    	<img src="{{ url_for('static', filename='screenshot2.png') }}", style="margin-top: 100px;">
+    	{{ if user == 'seungjun' }}
+	    	<img src="{{ url_for('static', filename='seungjun.png') }}", style="margin-top: 100px;">
+        {{ endif }}
+        {{ if user == 'azamat' }}
+	    	<img src="{{ url_for('static', filename='azamat.png') }}", style="margin-top: 100px;">
+        {{ endif }}
+        
     </div>
 
 
