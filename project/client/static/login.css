@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-	background-color: black;
+	background-color: #91D2AB;
 	height: 100%;
 	font-family: 'Numans', sans-serif;
 }
@@ -16,7 +16,7 @@ html,body{
 	margin-top: auto;
 	margin-bottom: auto;
 	width: 400px;
-	background-color: #101214;
+	background-color: #93c4a7;
 	color: white;
 }
 
