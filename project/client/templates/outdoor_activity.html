@@ -4,18 +4,32 @@
 
 <div class="dropdown text-center" style="margin-top: 90px; width:100%">
     <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      April {{day}}th
+      {% if day == "29" or day == "30" %}
+        April {{day}}th
+      {% endif %}
+      {% if day == "1" %}
+        May {{day}}st
+      {% endif %}
+      {% if day == "2" %}
+        May {{day}}nd
+      {% endif %}
+      {% if day == "3" %}
+        May {{day}}rd
+      {% endif %}
+      {% if day == "4" or day == "5" or day == "6"%}
+        May {{day}}th
+      {% endif %}
     </a>
   
     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-      <a class="dropdown-item" value="8" href="/app_usage?day=29">April 29th</a>
-      <a class="dropdown-item" value="9" href="/app_usage?day=30">April 30th</a>
-      <a class="dropdown-item" value="10" href="/app_usage?day=1">May 1st</a>
-      <a class="dropdown-item" value="11" href="/app_usage?day=2">May 2nd</a>
-      <a class="dropdown-item" value="12" href="/app_usage?day=3">May 3rd</a>
-      <a class="dropdown-item" value="13" href="/app_usage?day=4">May 4th</a>
-      <a class="dropdown-item" value="13" href="/app_usage?day=5">May 5th</a>
-      <a class="dropdown-item" value="13" href="/app_usage?day=6">May 6th</a>
+      <a class="dropdown-item" value="29" href="/?day=29">April 29th</a>
+      <a class="dropdown-item" value="30" href="/?day=30">April 30th</a>
+      <a class="dropdown-item" value="1" href="/?day=1">May 1st</a>
+      <a class="dropdown-item" value="2" href="/?day=2">May 2nd</a>
+      <a class="dropdown-item" value="3" href="/?day=3">May 3rd</a>
+      <a class="dropdown-item" value="4" href="/?day=4">May 4th</a>
+      <a class="dropdown-item" value="5" href="/?day=5">May 5th</a>
+      <a class="dropdown-item" value="6" href="/?day=6">May 6th</a>
     </div>
   </div>
 

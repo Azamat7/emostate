@@ -16,11 +16,11 @@ PASSWORDS_VALID["azamat"] = "123"
 PASSWORDS_VALID["seungjun"] = "456"
 
 
-@main_blueprint.route('/', methods=["GET"])
+@main_blueprint.route('/', methods=["GET", 'POST'])
 def outdoor_activity():
   if not signed_in:
     return redirect("login")
-  return render_template('outdoor_activity.html', user=(USERNAME or request.args.get('user')))
+  return render_template('outdoor_activity.html', day = (request.args.get('day') or "29"), user=(USERNAME or request.args.get('user')))
 
 
 @main_blueprint.route('/login', methods=['GET', 'POST'])
@@ -45,7 +45,7 @@ def login():
 
 @main_blueprint.route('/app_usage', methods=['GET', 'POST'])
 def app_usage():
-  return render_template('app_usage.html', day = (request.args.get('day') or "8"), user=request.args.get('user'))
+  return render_template('app_usage.html', day = (request.args.get('day') or "8"), user=(USERNAME or request.args.get('user')))
 
 
 @main_blueprint.route('/recommendation', methods=['GET'])
