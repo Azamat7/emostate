@@ -1,23 +1,23 @@
 <html>
 <head><meta charset="utf-8" /></head>
 <body>
-    <div class="col-10 mx-auto">
-        <h4 style="text-align:center; padding-top:120px;">Grey area means outdoor activity time</h4>
+    <div class="col-12 mx-auto">
+        <h4 style="text-align:center; padding-top:20px;">Grey area means outdoor activity time</h4>
                 <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    
 
         {% if user == 'seungjun' %}
-            <div id="a8f50c3c-b691-49f7-b804-fef59ca209c5" class="plotly-graph-div" style="height:700px; width:900px;"></div>
+            <div id="a8f50c3c-b691-49f7-b804-fef59ca209c5" class="plotly-graph-div" style="height:100%; width:100%;"></div>
         {% endif %}
         {% if user == 'azamat' %}
-                        <div id="f9e9fb71-485d-4f1c-9022-9a18f7910568" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+            <div id="f9e9fb71-485d-4f1c-9022-9a18f7910568" class="plotly-graph-div" style="height:100%; width:100%;"></div>
         {% endif %}
-        <h3 style="text-align:center">Your Location of the Day</h3>
+        <h3 style="text-align:center; padding-top:20px;">Your Location of the Day</h3>
         {% if user == 'seungjun' %}
-            <div id="e2facaf5-d602-4cbd-8e1b-3bb3a3ca34e2" class="plotly-graph-div" style="height:700px; width:900px;"></div>
+            <div id="e2facaf5-d602-4cbd-8e1b-3bb3a3ca34e2" class="plotly-graph-div" style="height:100%; width:100%;"></div>
         {% endif %}
         {% if user == 'azamat' %}
-            <div id="1c8a1d57-daea-4601-be39-5da48396b2d9" class="plotly-graph-div" style="height:700px; width:900px;"></div>
+            <div id="1c8a1d57-daea-4601-be39-5da48396b2d9" class="plotly-graph-div" style="height:100%; width:100%;"></div>
             
         {% endif %}
 
