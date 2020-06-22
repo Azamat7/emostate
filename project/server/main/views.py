@@ -32,7 +32,9 @@ def login():
       return redirect("/")
     return render_template("login.html", error=False)
   elif request.method == 'POST':
-    print(request.form.get("username"))
+    if request.form.get("logout_btn"):
+      signed_in = False
+      return redirect("login")
     input_username = request.form.get("username")
     if input_username in USERNAMES_VALID and request.form.get("password") == PASSWORDS_VALID[input_username]:
       signed_in = True

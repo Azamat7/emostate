@@ -17,7 +17,7 @@
   <body>
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #28a745; color:white;">
-      <a class="navbar-brand" >Welcome to EmoState</a>
+      <a class="navbar-brand" >EmoState</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,6 +29,10 @@
           <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
         </div>
       </div>
+      <a class="navbar-brand" >Welcome, {{user}}!</a>
+      <form action="{{ url_for('main.login') }}" method="post">
+        <input type="submit" name="logout_btn" value="Logout" class="logout_btn btn btn-light">
+      </form>
     </nav>
 
     <div class="container">
