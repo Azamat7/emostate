@@ -23,9 +23,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="{{ url_for('main.outdoor_activity') }}">Outdoor Activity <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="{{ url_for('main.app_usage') }}">App Usage</a>
-          <a class="nav-item nav-link" href="{{ url_for('main.recommendation') }}">Diagnosis & Recommendation</a>
+          <a class="nav-item nav-link" href="{{ url_for('main.outdoor_activity', user=user ) }}">Outdoor Activity <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="{{ url_for('main.app_usage', user=user ) }}">App Usage</a>
+          <a class="nav-item nav-link" href="{{ url_for('main.recommendation', user=user ) }}">Diagnosis & Recommendation</a>
           <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
         </div>
       </div>
